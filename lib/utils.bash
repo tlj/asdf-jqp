@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for <YOUR TOOL>.
-GH_REPO="https://github.com/sharkdp/bat"
+GH_REPO="https://github.com/noahgorstein/jqp"
 
 fail() {
   echo -e "asdf-bat: $*"
