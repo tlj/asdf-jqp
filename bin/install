@@ -24,7 +24,7 @@ install_jqp() {
   chmod +x "$bin_path"
   rm -rf "${install_path}/jqp.tar.gz"
 
-  if [ "$"(get_platform)"" == 'Darwin' ]; then
+  if [ "$(get_platform)" == 'Darwin' ]; then
     echo "Upon first execution of jqp, you will need to allow jqp to execute"
     echo "in the Security & Privacy system prefences. Once allowed to execute,"
     echo "you will need to click 'Open' on the second attempt to execute. Once"
