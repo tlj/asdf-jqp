@@ -23,6 +23,16 @@ install_jqp() {
   mv "${install_path}/jqp" "${bin_path}"
   chmod +x "$bin_path"
   rm -rf "${install_path}/jqp.tar.gz"
+
+  if [ $(get_platform) == 'Darwin' ]; then
+    echo << EOF
+Upon first execution of jqp, you will need to allow jqp to execute
+in the Security & Privacy system prefences. Once allowed to execute,
+you will need to click 'Open' on the second attempt to execute. Once
+this has been accomplished then jqp will execute as a normal command
+line utility.
+EOF
+  fi
 }
 
 get_arch() {
