@@ -6,8 +6,8 @@ stages:
   - notify
 
 variables:
-  PLUGIN_NAME: bat
-  PLUGIN_CHECK: "bat --version"
+  PLUGIN_NAME: jqp
+  PLUGIN_CHECK: "jqp --version"
   SHELLCHECK_VERSION: stable
 
 asdf-plugin-lint:
