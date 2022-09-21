@@ -45,7 +45,7 @@ Describe 'asdf-bat'
 
       # Have to cheat here as can not mock uname twice
       get_arch() {
-        echo "arm"
+        echo "arm64"
       }
 
       It 'returns correct URL'
