@@ -22,9 +22,9 @@ Describe 'asdf-bat'
         echo "arm64"
       End
 
-      It "returns aarch64"
+      It "returns arm64"
         When call get_arch
-        The output should equal "aarch64"
+        The output should equal "arm64"
       End
     End
 
