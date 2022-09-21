@@ -8,7 +8,7 @@ Describe 'asdf-bat'
   Describe 'get_download_url()'
     Context "when OS is OSX"
       Mock 'uname'
-        echo "apple-darwin"
+        echo "Darwin"
       End
 
       # Have to cheat here as can not mock uname twice
@@ -24,7 +24,7 @@ Describe 'asdf-bat'
 
     Context "when OS is Linux on Intel CPU"
       Mock 'uname'
-        echo "unknown-linux-gnu"
+        echo "Linux"
       End
 
       # Have to cheat here as can not mock uname twice
@@ -40,7 +40,7 @@ Describe 'asdf-bat'
 
     Context "when OS is Linux on ARM CPU"
       Mock 'uname'
-        echo "unknown-linux-gnueabihf"
+        echo "Linux"
       End
 
       # Have to cheat here as can not mock uname twice
