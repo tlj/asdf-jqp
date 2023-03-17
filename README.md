@@ -3,7 +3,7 @@
 ![Build Status](https://gitlab.com/wt0f/asdf-jqp/badges/main/pipeline.svg)
 
 This is the plugin repo for [asdf-vm/asdf](https://github.com/asdf-vm/asdf.git)
-to manage [sharkdp/bat](https://github.com/noahgorstein/jqp).
+to manage [noahgorstein/jqp](https://github.com/noahgorstein/jqp).
 
 ## Install
 
