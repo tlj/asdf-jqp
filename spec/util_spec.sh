@@ -17,7 +17,7 @@ Describe 'asdf-bat'
       End
     End
 
-    Context "when CPU is ARM64"
+    Context "when CPU is reported as ARM64"
       Mock 'uname'
         echo "arm64"
       End
@@ -28,6 +28,16 @@ Describe 'asdf-bat'
       End
     End
 
+    Context "when CPU is reported as aarch64"
+      Mock 'uname'
+        echo "aarch64"
+      End
+
+      It "returns arm64"
+        When call get_arch
+        The output should equal "arm64"
+      End
+    End
 
   End
 
