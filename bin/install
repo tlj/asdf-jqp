@@ -65,7 +65,7 @@ get_download_url() {
   local version="$1"
   local arch; arch="$(get_arch)"
   local platform; platform="$(get_platform)"
-  echo "https://github.com/noahgorstein/jqp/releases/download/v${version}/jqp_${version}_${platform}_${arch}.tar.gz"
+  echo "https://github.com/noahgorstein/jqp/releases/download/v${version}/jqp_${platform}_${arch}.tar.gz"
 }
 
 if [[ -z "$SHELLSPEC_LIB" ]]; then

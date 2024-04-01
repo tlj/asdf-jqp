@@ -1,5 +1,5 @@
 
-export ASDF_INSTALL_VERSION=0.21.0
+export ASDF_INSTALL_VERSION=0.5.0
 export ASDF_INSTALL_PATH=/tmp
 
 Describe 'asdf-bat'
@@ -18,7 +18,7 @@ Describe 'asdf-bat'
 
       It 'returns correct URL'
         When call get_download_url "${ASDF_INSTALL_VERSION}" 'bat'
-        The output should equal "https://github.com/noahgorstein/jqp/releases/download/v${ASDF_INSTALL_VERSION}/jqp_${ASDF_INSTALL_VERSION}_Darwin_x86_64.tar.gz"
+        The output should equal "https://github.com/noahgorstein/jqp/releases/download/v${ASDF_INSTALL_VERSION}/jqp_Darwin_x86_64.tar.gz"
       End
     End
 
@@ -34,7 +34,7 @@ Describe 'asdf-bat'
 
       It 'returns correct URL'
         When call get_download_url "${ASDF_INSTALL_VERSION}" 'bat'
-        The output should equal "https://github.com/noahgorstein/jqp/releases/download/v${ASDF_INSTALL_VERSION}/jqp_${ASDF_INSTALL_VERSION}_Linux_x86_64.tar.gz"
+        The output should equal "https://github.com/noahgorstein/jqp/releases/download/v${ASDF_INSTALL_VERSION}/jqp_Linux_x86_64.tar.gz"
       End
     End
 
@@ -50,7 +50,7 @@ Describe 'asdf-bat'
 
       It 'returns correct URL'
         When call get_download_url "${ASDF_INSTALL_VERSION}" 'bat'
-        The output should equal "https://github.com/noahgorstein/jqp/releases/download/v${ASDF_INSTALL_VERSION}/jqp_${ASDF_INSTALL_VERSION}_Linux_arm64.tar.gz"
+        The output should equal "https://github.com/noahgorstein/jqp/releases/download/v${ASDF_INSTALL_VERSION}/jqp_Linux_arm64.tar.gz"
       End
     End
   End
